@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codewell | Spense | Alfred Thompson Ovie</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- <link rel="stylesheet" href="css/css-reset.css" /> -->
+		<!-- <link rel="stylesheet" href="css/styles.css" /> -->
+
+		<!-- <script src="js/gsap.min.js"></script> -->
+		<!-- <script src="js/ScrollTrigger.min.js"></script> -->
+		<!-- <script src="js/index.js" defer></script> -->
+    <style>
+      .notLoaded {
+        visibility: hidden;
+      }
+    </style>
+    <script>
+      const el = document.getElementsByTagName('html');
+      el[0].classList.add('notLoaded');
+    </script>
+  </head>
+  <body>
+    <section id="app" class="container">
+      <header class="header grid">
+				<div class="inner">
+					<nav class="nav-bar">
+						<p class="brand-logo">
+							<span class="letter">s</span>
+							<span class="letter">p</span>
+							<span class="letter">e</span>
+							<span class="letter">n</span>
+							<span class="letter">c</span>
+							<span class="letter">e</span>
+							<span class="letter">.</span>
+						</p>
+
+						<div class="hamburger">
+							<span class="barz first-bar"></span>
+							<span class="barz second-bar"></span>
+							<span class="barz third-bar"></span>
+						</div>
+
+						<ul class="nav-list">
+							<li class="nav-item">
+                <a href="#" class="nav-link">Business</a>
+              </li>
+							<li class="nav-item">
+                <a href="#" class="nav-link">Pricing</a>
+              </li>
+							<li class="nav-item">
+                <a href="#" class="nav-link">Features</a>
+              </li>
+							<li class="nav-item">
+                <a href="#" class="nav-link">Login</a>
+              </li>
+							<li class="nav-item">
+                <a href="#" class="nav-link cta"><span class="cta__text">Get Started</span></a>
+              </li>
+						</ul>
+					</nav>
+					<section class="hero__section">
+						<!-- <div class="illustration">
+						</div> -->
+            <picture class="illustration">
+              <source>
+              <source srcset="src/assets/images/HeroImageDesktop.png" media="(min-width: 992px)">
+              <source srcset="src/assets/images/HeroImageTablet.png" media="(min-width: 580px)">
+              <img src="src/assets/images/HeroImageMobile.png" alt="">
+            </picture>
+						<div class="hero__content">
+							<h1 class="hero__title">
+								<span class="blockText is-heading">Share your unfiltered </span>
+								<span class="blockText is-heading">
+									thoughts. Get paid.
+								</span> 
+							</h1>
+							<p class="hero__description">Spence is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing <em>just</em> that.</p>
+							<div class="hero__tips">
+								<div class="hero__tip">
+									<img src="src/assets/images/Checkmark.svg" alt="Checkmark">
+									<p>Receive 99% off the earnings.</p>
+								</div>
+								<div class="hero__tip">
+									<img src="src/assets/images/Checkmark.svg" alt="Checkmark">
+									<p>Get paid via Debit Card, ACH, or PayPal.</p>
+								</div>
+								<div class="hero__tip">
+									<img src="src/assets/images/Checkmark.svg" alt="Checkmark">
+									<p>Withdraw your earnings anytime.</p>
+								</div>
+							</div>
+							<form action="#" class="form">
+								<input type="email" id="email" placeholder="john@example.com" name="email" class="email form__control" required>
+								<!-- <input type="submit" value="Get Started" class="cta" id="submit"> -->
+                <button class="cta form__control"><span class="cta__text">Get Started</span></button>
+							</form>
+						</div>
+					</section>
+				</div>
+			</header>
+			<main>
+				<section class="sponsor__brand grid">
+					<div class="inner flex">
+						<div class="sponsor__img--wrapper  flex">
+							<img src="src/assets/images/FacebookLogo.png" alt="Facebook Logo" class="sponsor__img">
+							<img src="src/assets/images/DribbbleLogo.png" alt="Dribbble Logo" class="sponsor__img">
+							<img src="src/assets/images/YoutubeLogo.png" alt="Youtube Logo" class="sponsor__img">
+							<img src="src/assets/images/PinterestLogo.png" alt="Pinterest Logo" class="sponsor__img sponsor__img--group2">
+							<img src="src/assets/images/TwitterLogo.png" alt="Twitter Logo" class="sponsor__img sponsor__img--group2">
+							<img src="src/assets/images/RedditLogo.png" alt="Reddit Logo" class="sponsor__img sponsor__img--group3">
+							<img src="src/assets/images/GoogleLogo.png" alt="Google Logo" class="sponsor__img sponsor__img--group3">
+							<img src="src/assets/images/SlackLogo.png" alt="Slack Logo" class="sponsor__img sponsor__img--group3">
+						</div>
+					</div>
+				</section>
+				<section class="features grid">
+					<div class="inner innerFeatures">
+						<div class="features1 features--bg">
+
+							<div class="features__contents">
+								<h2 class="subheading">
+									<span class="subBlockText is-subHeading">Secure your money</span>
+									<span class="subBlockText is-subHeading">with Escrow.</span>
+								</h2>
+                <section>
+                  <p  class="isDescription__phoneDisplay">Spence uses Escrow to secure all payments. We believe Escrow offers the highest level of security for your payments, so you never need to worry about scams.</p>
+                  <a href="#" class="cta__ghost is__ctaGhost--phoneDisplay">
+                    <span class="cta__ghost--text is-cta is__cta--phoneDisplay">Learn more about Escrow</span>
+                    <span class="cta__ghost--arrow is-cta is__cta--phoneDisplay">&rarr;</span>
+                  </a>
+                </section>
+							</div>
+
+							<div class="phone-display"></div>
+              <!-- <section>
+                <picture>
+                  <source srcset="src/assets/images/PhoneMockupDesktop.png" media="(min-width: 992px)">
+                  <source srcset="src/assets/images/PhoneMockupTablet.png" media="(min-width: 580px)">
+                  <img src="src/assets/images/PhoneMockupMobile.png" alt="">
+                </picture>
+              </section> -->
+						</div>
+						<!--  -->
+						<div class="features2">
+							<div class="features__contents feature--gridPlacement">
+								<h2 class="subheading subheading__textEditor">
+									A text editor like no other.
+								</h2>
+								<p class="feature2--description isDescription__textEditor">Our text editor pulls you into focus mode with it's simplistic design and usability so you can put out your best writings.</p>
+								<a href="#" class="cta__ghost is__ctaGhost--textEditor">
+									<span class="cta__ghost--text is-cta is__cta--textEditor">Text Editor Live Demo</span>
+									<span class="cta__ghost--arrow is-cta is__cta--textEditor">&rarr;</span>
+								</a>
+							</div>
+
+							<div class="textEditor-display">
+								<img src="src/assets/images/TextEditor.png" alt="text editor" class="textEditor">
+							</div>
+						</div>
+						</div>
+				</section>
+			</main>
+			<footer class="footer grid">
+				<div class="inner footer--inner">
+					<div class="footer__desc">
+						<p class="brand-logo__footer">
+              <a href="#">
+                <span class="letter--footer">s</span>
+                <span class="letter--footer">p</span>
+                <span class="letter--footer">e</span>
+                <span class="letter--footer">n</span>
+                <span class="letter--footer">c</span>
+                <span class="letter--footer">e</span>
+                <span class="letter--footer">.</span>
+              </a>
+						</p>
+						<p class="footer__description">Spence is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing <em>just</em> that.</p>
+					</div>
+
+					<div class="footer--link__group footer--link__group1">
+						<ul class="company">
+							<li class="nav-item__title is__nav-item--footer">Company</li>
+							<li class="is__nav-item--footer">
+								<a href="#">About</a>
+								</li>
+							<li class="is__nav-item--footer">
+								<a href="#">Customers</a>
+								</li>
+							<li class="is__nav-item--footer">
+								<a href="#">Blog</a>
+								</li>
+						</ul>
+
+						<ul class="opportunities">
+							<li class="nav-item__title is__nav-item--footer">Opportunities</li>
+							<li class="is__nav-item--footer">
+								<a href="#">Jobs</a>
+								</li>
+						</ul>
+					</div>
+
+					<div class="footer--link__group footer--link__group2">
+						<ul class="sitemap">
+							<li class="nav-item__title is__nav-item--footer">Sitemap</li>
+							<li class="is__nav-item--footer">
+								<a href="#">Homepage</a>
+								</li>
+						</ul>
+						<ul class="resources">
+							<li class="nav-item__title is__nav-item--footer">Resources</li>
+							<li class="is__nav-item--footer">
+								<a href="#">Support</a>
+								</li>
+							<li class="is__nav-item--footer">
+								<a href="#">Contact</a>
+								</li>
+							<li class="is__nav-item--footer">
+								<a href="#">FAQ</a>
+								</li>
+						</ul>
+						
+					</div>
+
+				</div>
+			</footer>
+    </section>
+
+
+    <script>
+      window.addEventListener("DOMContentLoaded", ()=>el[0].classList.remove('notLoaded'));
+      // document.addEventListener('D')
+      // ;
+    </script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
