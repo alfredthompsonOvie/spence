@@ -59,9 +59,12 @@ function displayMenu() {
 	menu.to(".nav-list", {
 		left: "0%",
 		ease: "bounce",
-	}).from(".nav-link", {
+	}).fromTo(".nav-link", {
 		y: 20,
 		opacity: 0,
+	}, {
+		y: 0,
+		opacity: 1,
 		stagger: 0.2,
 	});
 }
@@ -164,13 +167,14 @@ pageTl
 		}
 	})
 
-	.fromTo(['.is__ctaGhost--phoneDisplay', '.is__cta--phoneDisplay'], {
-		x: 40,
+	.fromTo(['.is__ctaGhost--phoneDisplay'], {
+		y: 40,
 		autoAlpha: 0,
   }, {
-    x: 0,
+    y: 0,
 		autoAlpha: 1,
 		stagger: .4,
+		ease: 'none',
 		scrollTrigger: {
 			trigger: ".is__ctaGhost--phoneDisplay",
 			start: "top 95%",
@@ -190,9 +194,12 @@ pageTl
 			// markers: true,
 		}
 	})
-	.from(['.subheading__textEditor', '.isDescription__textEditor'], {
-		autoAlpha: 0,
-		y: 10,
+	.fromTo(['.subheading__textEditor', '.isDescription__textEditor'], {
+		autoAlpha: 0.01,
+		x: 50,
+	}, {
+		autoAlpha: 1,
+		x: 0,
 		stagger: .2,
 		scrollTrigger: {
 			trigger: ".subheading__textEditor",
@@ -202,9 +209,12 @@ pageTl
 			// markers: true,
 		}
 	})
-	.from(['.is__ctaGhost--textEditor', '.is__cta--textEditor'], {
+	.fromTo(['.is__ctaGhost--textEditor', '.is__cta--textEditor'], {
 	  x: 40,
-		autoAlpha: 0,
+		autoAlpha: 0.01,
+	}, {
+		x: 0,
+		autoAlpha: 1,
 		stagger: .4,
 		scrollTrigger: {
 			trigger: ".is__ctaGhost--textEditor",
@@ -214,13 +224,18 @@ pageTl
 			// markers: true,
 		}
 	})
-	.from('.textEditor', {
-		autoAlpha: 0,
-		y: 40,
+	.fromTo('.textEditor', {
+		// autoAlpha: 0.01,
+		y: 80,
+		clipPath: 'polygon(0 0, 0 0, 0 100%, 0 100%)',
+	}, {
+		// autoAlpha: 1,
+		y: 0,
+		clipPath: 'polygon(100% 0, 0 0, 0 100%, 100% 100%)',
 		scrollTrigger: {
 			trigger: ".textEditor",
 			start: "top 95%",
-			end: "center 80%",
+			end: "center 75%",
 			scrub: true,
 			// markers: true,
 		}
